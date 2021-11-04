@@ -150,7 +150,7 @@ void MainWindow::on_pushButton_10_clicked() // walka
             {
                 hp=hp-s1;
                 ui->textBrowser_2->setText("Przeciwnikowi pozostało" + QString::number(hp1) + "życia <br/>Kontynuować starcie?");
-                //poka staty
+                ui->textBrowser->setText( "Statystyki Postaci:<br/>siła:" + QString::number(s) + "<br/>punkty życia:" + QString::number(hp) + "/" + QString::number(hpr) + "<br/>punkty zręczności(nie posiadają jeszcze funkcji):" + QString::number(z) + "<br/>punkty prędkości:" + QString::number(p) + "<br/>celność (nie posiada jeszcze funkcji):" + QString::number(c) + "%" + "<br/>Liczba punktów doświadczenia:" + QString::number(pxp) + "<br/>Poziom postaci i potworów:" + QString::number(lvl));
             }
                 if (hp1 <= 0)
             {
@@ -170,7 +170,7 @@ void MainWindow::on_pushButton_10_clicked() // walka
                     xp=xp-100;
                     hp=hpr;
                 }
-               //poka staty
+               ui->textBrowser->setText( "Statystyki Postaci:<br/>siła:" + QString::number(s) + "<br/>punkty życia:" + QString::number(hp) + "/" + QString::number(hpr) + "<br/>punkty zręczności(nie posiadają jeszcze funkcji):" + QString::number(z) + "<br/>punkty prędkości:" + QString::number(p) + "<br/>celność (nie posiada jeszcze funkcji):" + QString::number(c) + "%" + "<br/>Liczba punktów doświadczenia:" + QString::number(pxp) + "<br/>Poziom postaci i potworów:" + QString::number(lvl));
                ui->progressBar->setValue(xp);
             }
                 if (hp<=0)
@@ -185,7 +185,7 @@ void MainWindow::on_pushButton_10_clicked() // walka
                 xp = 0;
                 pxp = 0;
                 lvl = 0;
-                //poka staty
+                ui->textBrowser->setText( "Statystyki Postaci:<br/>siła:" + QString::number(s) + "<br/>punkty życia:" + QString::number(hp) + "/" + QString::number(hpr) + "<br/>punkty zręczności(nie posiadają jeszcze funkcji):" + QString::number(z) + "<br/>punkty prędkości:" + QString::number(p) + "<br/>celność (nie posiada jeszcze funkcji):" + QString::number(c) + "%" + "<br/>Liczba punktów doświadczenia:" + QString::number(pxp) + "<br/>Poziom postaci i potworów:" + QString::number(lvl));
                 ui->progressBar->setValue(xp);
                 }
     }
@@ -196,7 +196,7 @@ void MainWindow::on_pushButton_10_clicked() // walka
             {
                 hp1=hp1-s;
                 ui->textBrowser_2->setText("Przeciwnikowi pozostało" + QString::number(hp1) + "życia <br/>Kontynuować starcie?");
-                //poka staty
+                ui->textBrowser->setText( "Statystyki Postaci:<br/>siła:" + QString::number(s) + "<br/>punkty życia:" + QString::number(hp) + "/" + QString::number(hpr) + "<br/>punkty zręczności(nie posiadają jeszcze funkcji):" + QString::number(z) + "<br/>punkty prędkości:" + QString::number(p) + "<br/>celność (nie posiada jeszcze funkcji):" + QString::number(c) + "%" + "<br/>Liczba punktów doświadczenia:" + QString::number(pxp) + "<br/>Poziom postaci i potworów:" + QString::number(lvl));
             }
                 if (hp1 <= 0)
             {
@@ -214,7 +214,7 @@ void MainWindow::on_pushButton_10_clicked() // walka
                     xp=xp-100;
                     hp=hpr;
                 }
-                //poka staty
+                ui->textBrowser->setText( "Statystyki Postaci:<br/>siła:" + QString::number(s) + "<br/>punkty życia:" + QString::number(hp) + "/" + QString::number(hpr) + "<br/>punkty zręczności(nie posiadają jeszcze funkcji):" + QString::number(z) + "<br/>punkty prędkości:" + QString::number(p) + "<br/>celność (nie posiada jeszcze funkcji):" + QString::number(c) + "%" + "<br/>Liczba punktów doświadczenia:" + QString::number(pxp) + "<br/>Poziom postaci i potworów:" + QString::number(lvl));
                 ui->progressBar->setValue(xp);
             }
                 if (hp<=0)
@@ -229,7 +229,7 @@ void MainWindow::on_pushButton_10_clicked() // walka
                 xp = 0;
                 pxp = 0;
                 lvl = 0;
-                //poka staty
+                ui->textBrowser->setText( "Statystyki Postaci:<br/>siła:" + QString::number(s) + "<br/>punkty życia:" + QString::number(hp) + "/" + QString::number(hpr) + "<br/>punkty zręczności(nie posiadają jeszcze funkcji):" + QString::number(z) + "<br/>punkty prędkości:" + QString::number(p) + "<br/>celność (nie posiada jeszcze funkcji):" + QString::number(c) + "%" + "<br/>Liczba punktów doświadczenia:" + QString::number(pxp) + "<br/>Poziom postaci i potworów:" + QString::number(lvl));
                 ui->progressBar->setValue(xp);
             }
     }
@@ -294,4 +294,3 @@ void MainWindow::on_pushButton_11_clicked()
                            "<br/>Liczba punktów doświadczenia:" + QString::number(pxp) +
                            "<br/>Poziom postaci i potworów:" + QString::number(lvl));
 }
-
